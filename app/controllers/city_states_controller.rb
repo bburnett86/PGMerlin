@@ -2,11 +2,7 @@ class CityStatesController < ApplicationController
 
   def new
     @location = Location.new
-    if request.xhr?
-      render :_new, layout: false, locals:{location: @location}
-    else
       render :new
-    end
   end
 
   def create
