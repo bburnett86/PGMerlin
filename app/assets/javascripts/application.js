@@ -107,7 +107,7 @@ $(document).ready(function(){
 
     var request = $.ajax({
       method: "GET",
-      url: "http://ip-api.com/json",
+      url: "https://ip-api.com/json",
     })
     request.done(function(location){
       $("#destination").val(location.zip)
