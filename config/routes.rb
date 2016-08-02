@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   resources :city_states, only: [:new, :create, :show]
 
-  resources :zipcode, only: [:new, :create, :show]
+  resources :zipcodes, only: [:new, :create, :show]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
