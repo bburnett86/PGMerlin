@@ -5,7 +5,7 @@ class ZipcodesController < ApplicationController
     if request.xhr?
       render :_new, layout: false, locals:{location: @location}
     else
-      render :new
+      redirect_to(:new)
     end
   end
 
@@ -15,7 +15,7 @@ class ZipcodesController < ApplicationController
       if request.xhr?
         render :_show, layout: false, locals:{location: @location}
       else
-        redirect_to city_state_path
+        redirect_to(:show)
       end
     else
       if request.xhr?
